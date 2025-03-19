@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+  
+  nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-block {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-block h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .education-block p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .education-block .institution {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .education-block .duration {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .project-block, .certification-block, .accomplishment-block {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-block:hover, .certification-block:hover, .accomplishment-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-block h3, .certification-block h3, .accomplishment-block h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .project-block p, .certification-block p, .accomplishment-block p {
+    margin: 10px 0;
+  }
+  
+  .project-block a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-block a:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between "Contact Me" text and icons */
+    margin-bottom: 10px;
+  }
+  
+  .contact-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+  }
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .modal-header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+  }
+  
+  .modal-body {
+    margin-bottom: 20px;
+  }
+  
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #333;
+  }

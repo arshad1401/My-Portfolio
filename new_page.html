@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Mohammad Arshad Ali - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; /* Space between image and text */
+    }
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .education-block {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .education-block:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .education-block h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .education-block p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .education-block .institution {
+      font-weight: bold;
+      color: #007bff;
+    }
+    .education-block .duration {
+      font-style: italic;
+      color: #777;
+    }
+    .project-block, .certification-block, .accomplishment-block {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-block:hover, .certification-block:hover, .accomplishment-block:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .project-block h3, .certification-block h3, .accomplishment-block h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .project-block p, .certification-block p, .accomplishment-block p {
+      margin: 10px 0;
+    }
+    .project-block a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .project-block a:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+    .modal-header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .modal-header h2 {
+      margin: 0;
+    }
+    .modal-body {
+      margin-bottom: 20px;
+    }
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="your-profile-picture.jpg" alt="Your Name" class="profile-pic">
+      <div>
+        <h1>Shaik Mohammad Arshad Ali</h1>
+        <p>Aspiring Computer Science Engineer | Problem Solver | Innovator</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#accomplishments">Accomplishments</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Shaik Mohammad Arshad Ali, a Computer Science Engineering student at Vignan’s Foundation for Science, Technology, and Research. I am passionate about technology, problem-solving, and innovation. With a strong foundation in programming and machine learning, I aim to contribute to impactful projects and solutions.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="education-block">
+        <h3 class="institution">Vignan’s Foundation for Science, Technology, and Research</h3>
+        <p><strong>Bachelor of Technology in Computer Science Engineering</strong></p>
+        <p>CGPA: 7.77</p>
+        <p class="duration">2021 - 2025</p>
+      </div>
+      <div class="education-block">
+        <h3 class="institution">Sri Chaitanya Jr. College</h3>
+        <p><strong>MPC, A.P Board</strong></p>
+        <p>Percentage: 93.9%</p>
+        <p class="duration">2019 - 2021</p>
+      </div>
+      <div class="education-block">
+        <h3 class="institution">Sri Chaitanya School</h3>
+        <p><strong>A.P Board</strong></p>
+        <p>CGPA: 10.0</p>
+        <p class="duration">2019</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-block">
+        <h3>Face Recognition Voting System</h3>
+        <p><strong>Technologies Used:</strong> Python, OpenCV, PHP, HTML, JavaScript, MySQL, LBPH Face Recognizer</p>
+        <a href="#" class="view-details" data-modal="modal1">View Project Details</a>
+      </div>
+      <div class="project-block">
+        <h3>Crop Yield Prediction</h3>
+        <p><strong>Technologies Used:</strong> Python, Matplotlib, NumPy, Pandas, Random Forest, Linear Regression</p>
+        <a href="#" class="view-details" data-modal="modal2">View Project Details</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, C, Java, SQL, AWS</li>
+        <li><strong>Development Tools:</strong> VS Code, Jupyter Notebook</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS</li>
+        <li><strong>Operating Systems:</strong> Windows, macOS</li>
+      </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="certification-block">
+        <h3>NPTEL Certifications</h3>
+        <p>Internet of Things, Principles of Management, E-Business, Leadership and Team Effectiveness</p>
+      </div>
+      <div class="certification-block">
+        <h3>Cambridge University Certifications</h3>
+        <p>Preliminary English Test (PET) - Grade B</p>
+        <p>Business English Certificate (BEC) - Score 157</p>
+      </div>
+      <div class="certification-block">
+        <h3>HackerRank Certifications</h3>
+        <p>Problem Solving, Python, SQL, Java</p>
+      </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments" class="section">
+      <h2>Accomplishments</h2>
+      <div class="accomplishment-block">
+        <ul>
+          <li>2-star Coder in CodeChef</li>
+          <li>Participated in GeeksForGeeks Hack-A-Thon</li>
+          <li>Solved 150+ problems in LeetCode</li>
+          <li>Engaged in Kho-Kho competitions and cricket tournaments</li>
+          <li>Participated in various drawing competitions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> <a href="mailto:shmohammadarshadali@gmail.com">shmohammadarshadali@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91-9502739689</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arshad1401" target="_blank">linkedin.com/in/arshad1401</a></p>
+    </section>
+  </div>
+
+  <!-- Modals for Project Details -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Face Recognition Voting System</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          Developed a Face Recognition Voting System using the LBPH Face Recognizer to accurately identify and verify individuals based on facial features. Achieved 89% accuracy and reduced fraudulent voting incidents by 85%.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/face-recognition-voting" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Crop Yield Prediction</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          Developed a machine learning-based model to forecast crop yield per hectare. Utilized Random Forest for feature selection and Linear Regression for predictions, providing actionable insights for agricultural stakeholders.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/crop-yield-prediction" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Shaik Mohammad Arshad Ali. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to handle modal functionality
+    const modals = document.querySelectorAll('.modal');
+    const viewDetailsButtons = document.querySelectorAll('.view-details');
+    const closeButtons = document.querySelectorAll('.close');
+
+    // Open modal when "View Project Details" is clicked
+    viewDetailsButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = button.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+      });
+    });
+
+    // Close modal when close mark or outside the modal is clicked
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        modal.style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

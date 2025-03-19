@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Mohammad Arshad Ali - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#accomplishments">Accomplishments</a>
+  </nav>
+
+  <!-- Header Section (Name and Image) -->
+  <header>
+    <div class="header-content">
+      <img src="image.png" alt="Your Name" class="profile-pic">
+      <div>
+        <h1>Shaik Mohammad Arshad Ali</h1>
+        <p>Aspiring Computer Science Engineer | Problem Solver | Innovator</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Sections -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Shaik Mohammad Arshad Ali, a Computer Science Engineering student at Vignan’s Foundation for Science, Technology, and Research. I am passionate about technology, problem-solving, and innovation. With a strong foundation in programming and machine learning, I aim to contribute to impactful projects and solutions.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="education-block">
+        <h3 class="institution">Vignan’s Foundation for Science, Technology, and Research</h3>
+        <p><strong>Bachelor of Technology in Computer Science Engineering</strong></p>
+        <p>CGPA: 7.77</p>
+        <p class="duration">2021 - 2025</p>
+      </div>
+      <div class="education-block">
+        <h3 class="institution">Sri Chaitanya Jr. College</h3>
+        <p><strong>MPC, A.P Board</strong></p>
+        <p>Percentage: 93.9%</p>
+        <p class="duration">2019 - 2021</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-block">
+        <h3>Face Recognition Voting System</h3>
+        <p><strong>Technologies Used:</strong> Python, OpenCV, PHP, HTML, JavaScript, MySQL, LBPH Face Recognizer</p>
+        <a href="#" class="view-details" data-modal="modal1">View Project Details</a>
+      </div>
+      <div class="project-block">
+        <h3>Optimizing Crop Recommendations Using NPK Values and Machine Learning Models</h3>
+        <p><strong>Technologies Used:</strong> Python, Matplotlib, NumPy, Pandas, Random Forest, Linear Regression</p>
+        <a href="#" class="view-details" data-modal="modal2">View Project Details</a>
+      </div>
+      <div class="project-block">
+        <h3>Crop Yield Prediction</h3>
+        <p><strong>Technologies Used:</strong> Python, Scipy, Matplotlib, NumPy, Pandas, Random Forest, Linear Regression</p>
+        <a href="#" class="view-details" data-modal="modal3">View Project Details</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, C, Java, SQL, AWS</li>
+        <li><strong>Development Tools:</strong> VS Code, Jupyter Notebook</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS</li>
+        <li><strong>Operating Systems:</strong> Windows, macOS</li>
+      </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="certification-block">
+        <h3>NPTEL Certifications</h3>
+        <p>Internet of Things, Principles of Management, E-Business, Leadership and Team Effectiveness</p>
+      </div>
+      <div class="certification-block">
+        <h3>Cambridge University Certifications</h3>
+        <p>Preliminary English Test (PET) - Grade B</p>
+        <p>Business English Certificate (BEC) - Score 157</p>
+      </div>
+      <div class="certification-block">
+        <h3>HackerRank Certifications</h3>
+        <p>Problem Solving, Python, SQL, Java</p>
+      </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments" class="section">
+      <h2>Accomplishments</h2>
+      <div class="accomplishment-block">
+        <ul>
+          <li>2-star Coder in CodeChef</li>
+          <li>Participated in GeeksForGeeks Hack-A-Thon</li>
+          <li>Solved 150+ problems in LeetCode</li>
+          <li>Engaged in Kho-Kho competitions and cricket tournaments</li>
+          <li>Participated in various drawing competitions</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modals for Project Details -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Face Recognition Voting System</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          Developed a Face Recognition Voting System using the LBPH Face Recognizer to accurately identify and verify individuals based on facial features. Achieved 89% accuracy and reduced fraudulent voting incidents by 85%.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/arshad1401/Face-recognition-voting-system-" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Optimizing Crop Recommendations Using NPK Values and Machine Learning Models</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          This project focuses on developing a hybrid machine learning model to provide accurate crop recommendations based on soil nutrients (Nitrogen, Phosphorus, Potassium) and environmental factors like temperature, humidity, pH, and rainfall. By combining Linear Regression and Random Forest, the model achieves a high accuracy of 99.3%, effectively capturing both linear and non-linear relationships in the data. The system aims to assist farmers in making data-driven decisions, optimizing crop yield, and improving resource utilization. This work demonstrates the potential of machine learning in precision agriculture, paving the way for scalable and real-time farming solutions.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/arshad1401/Crop-yeild-prediction-using-NPK-values" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Crop Yield Prediction</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          Developed a machine learning-based model to forecast crop yield per hectare. Utilized Random Forest for feature selection and Linear Regression for predictions, providing actionable insights for agricultural stakeholders.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/arshad1401/Crop-Yeild-Prediction-using-random-forest-approach-" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <span class="contact-text">Contact Me:</span>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/arshad1401" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/arshad1401" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:shmohammadarshadali@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <p>&copy; 2023 Shaik Mohammad Arshad Ali. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Professional Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Dashboard Styles */
+    .dashboard {
+      background: #444;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .dashboard a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .dashboard a:hover {
+      text-decoration: underline;
+    }
+
+    /* Full-Page Header */
+    header {
+      background: #333;
+      color: #fff;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Space between image and name */
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+
+    /* Container for Sections */
+    .container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+    .project-block {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-block:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .project-block h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .project-block a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .project-block a:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .modal-header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .modal-header h2 {
+      margin: 0;
+    }
+    .modal-body {
+      margin-bottom: 20px;
+    }
+    .modal-footer {
+      text-align: right;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Full-Page Header -->
+  <header>
+    <div class="header-content">
+      <img src="your-profile-picture.jpg" alt="Your Name" class="profile-pic">
+      <div>
+        <h1>Shaik Mohammad Arshad Ali</h1>
+        <p>Aspiring [Your Profession] | [Your Tagline]</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm [Your Name], a [Your Profession/Student] with a passion for [Your Field/Interest]. 
+        I have developed skills in [Your Skills] through [Your Education/Projects/Experience]. 
+        I am eager to bring my creativity and dedication to a professional role.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Skill 1 (e.g., Python, Data Analysis)</li>
+        <li>Skill 2 (e.g., HTML/CSS, Web Design)</li>
+        <li>Skill 3 (e.g., Communication, Teamwork)</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-block">
+        <h3>Project 1: Awesome Web App</h3>
+        <a href="#" class="view-details" data-modal="modal1">View Project Details</a>
+      </div>
+      <div class="project-block">
+        <h3>Project 2: Data Visualization Tool</h3>
+        <a href="#" class="view-details" data-modal="modal2">View Project Details</a>
+      </div>
+      <div class="project-block">
+        <h3>Project 3: E-commerce Platform</h3>
+        <a href="#" class="view-details" data-modal="modal3">View Project Details</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me via email or LinkedIn:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Modals for Project Details -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Project 1: Awesome Web App</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          This project is an awesome web application built using HTML, CSS, and JavaScript. 
+          It includes features like user authentication, real-time updates, and a responsive design. 
+          Bla bla bla, this is just placeholder text to fill up space. The project was challenging 
+          but rewarding, and I learned a lot about modern web development practices.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a></p>
+      </div>
+      <div class="modal-footer">
+        <button class="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Project 2: Data Visualization Tool</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          This project is a data visualization tool that helps users analyze and visualize large datasets. 
+          It uses Python, Pandas, and Matplotlib for data processing and visualization. Bla bla bla, 
+          this is just placeholder text to fill up space. The project taught me a lot about data 
+          manipulation and visualization techniques.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a></p>
+      </div>
+      <div class="modal-footer">
+        <button class="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Project 3: E-commerce Platform</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>
+          This project is an e-commerce platform built using React and Node.js. It includes features 
+          like product search, user reviews, and a secure payment gateway. Bla bla bla, this is just 
+          placeholder text to fill up space. The project was a great learning experience in full-stack 
+          development and API integration.
+        </p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a></p>
+      </div>
+      <div class="modal-footer">
+        <button class="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to handle modal functionality
+    const modals = document.querySelectorAll('.modal');
+    const viewDetailsButtons = document.querySelectorAll('.view-details');
+    const closeButtons = document.querySelectorAll('.close');
+
+    // Open modal when "View Project Details" is clicked
+    viewDetailsButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = button.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+      });
+    });
+
+    // Close modal when close button or outside the modal is clicked
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        modal.style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
